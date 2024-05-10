@@ -1,5 +1,5 @@
 {
-  "name": "udonswap-universal-router",
+  "name": "udonswap-universalrouter",
   "version": "1.0.0",
   "description": "sdk for integrating with the Universal Router contracts",
   "main": "dist/index.js",
