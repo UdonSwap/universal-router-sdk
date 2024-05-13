@@ -1,6 +1,6 @@
 import { RoutePlanner, CommandType } from '../../utils/routerCommands'
-import { Trade as V2Trade, Pair } from 'udonswap-v2'
-import { Trade as V3Trade, Pool, encodeRouteToPath } from 'udonswap-v3-sdk'
+import { Trade as V2Trade, Pair } from 'udonswap-v2-sdk'
+import { Trade as V3Trade, Pool, encodeRouteToPath } from 'udonswap-v3'
 import {
   Trade as RouterTrade,
   MixedRouteTrade,
@@ -14,9 +14,9 @@ import {
   getOutputOfPools,
   encodeMixedRouteToPath,
   partitionMixedRouteByProtocol,
-} from 'udonswap-router-sdk'
+} from 'udonswap-router'
 import { Permit2Permit } from '../../utils/inputTokens'
-import { Currency, TradeType, CurrencyAmount, Percent } from 'udonswap-sdk-core'
+import { Currency, TradeType, CurrencyAmount, Percent } from 'udonswap-core'
 import { Command, RouterTradeType, TradeConfig } from '../Command'
 import { SENDER_AS_RECIPIENT, ROUTER_AS_RECIPIENT, CONTRACT_BALANCE, ETH_ADDRESS } from '../../utils/constants'
 import { encodeFeeBips } from '../../utils/numbers'

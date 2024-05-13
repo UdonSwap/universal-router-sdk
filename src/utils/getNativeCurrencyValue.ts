@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, ETHER } from 'udonswap-sdk-core'
+import { Currency, CurrencyAmount, ETHER } from 'udonswap-core'
 
 export function getNativeCurrencyValue(currencyValues: CurrencyAmount<Currency>[]): CurrencyAmount<Currency> {
   for (const value of currencyValues) {

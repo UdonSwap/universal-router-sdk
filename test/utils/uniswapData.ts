@@ -1,7 +1,7 @@
 import JSBI from 'jsbi'
 import { ethers } from 'ethers'
-import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from 'udonswap-router-sdk'
-import { Trade as V2Trade, Pair, Route as RouteV2, computePairAddress } from 'udonswap-v2'
+import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from 'udonswap-router'
+import { Trade as V2Trade, Pair, Route as RouteV2, computePairAddress } from 'udonswap-v2-sdk'
 import {
   Trade as V3Trade,
   Pool,
@@ -10,9 +10,9 @@ import {
   TickMath,
   TICK_SPACINGS,
   FeeAmount,
-} from 'udonswap-v3-sdk'
+} from 'udonswap-v3'
 import { SwapOptions } from '../../src'
-import { CurrencyAmount, TradeType, ETHER, Token, Percent, Currency } from 'udonswap-sdk-core'
+import { CurrencyAmount, TradeType, ETHER, Token, Percent, Currency } from 'udonswap-core'
 import IUniswapV3Pool from '@uniswap/v3-core/artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json'
 import { TEST_RECIPIENT_ADDRESS } from './addresses'
 

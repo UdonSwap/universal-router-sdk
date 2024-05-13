@@ -1,7 +1,7 @@
-import { MixedRouteSDK, Trade as RouterTrade } from 'udonswap-router-sdk'
-import { Currency, CurrencyAmount, ETHER, Token, TradeType } from 'udonswap-sdk-core'
-import { Pair, Route as V2Route } from 'udonswap-v2'
-import { Pool, Route as V3Route, FeeAmount } from 'udonswap-v3-sdk'
+import { MixedRouteSDK, Trade as RouterTrade } from 'udonswap-router'
+import { Currency, CurrencyAmount, ETHER, Token, TradeType } from 'udonswap-core'
+import { Pair, Route as V2Route } from 'udonswap-v2-sdk'
+import { Pool, Route as V3Route, FeeAmount } from 'udonswap-v3'
 import { BigNumber } from 'ethers'
 import { ETH_ADDRESS, E_ETH_ADDRESS } from './constants'
 
