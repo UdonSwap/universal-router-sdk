@@ -48,7 +48,7 @@ describe('SwapRouter.swapCallParameters', () => {
     let WETH_USDC_V2: Pair
 
     beforeEach(async () => {
-      ;({ WETH_USDC_V3, USDC_DAI_V2, WETH_USDC_V2 } = await getUniswapPools(15360000))
+      ; ({ WETH_USDC_V3, USDC_DAI_V2, WETH_USDC_V2 } = await getUniswapPools(15360000))
     })
 
     it('erc20 -> 1 looksrare nft', async () => {
@@ -70,13 +70,13 @@ describe('SwapRouter.swapCallParameters', () => {
     })
 
     it('weth -> 1 looksrare nft with Permit', async () => {
-      const permit2Data = makePermit(WETH_ADDRESS(1), looksRareV2Value.toString(), '0', FORGE_ROUTER_ADDRESS)
-      const signature = await generatePermitSignature(permit2Data, wallet, 1, FORGE_PERMIT2_ADDRESS)
+      const permit2Data = makePermit(WETH_ADDRESS(919), looksRareV2Value.toString(), '0', FORGE_ROUTER_ADDRESS)
+      const signature = await generatePermitSignature(permit2Data, wallet, 919, FORGE_PERMIT2_ADDRESS)
       const UnwrapWETHData = {
         ...permit2Data,
         signature,
       }
-      const UnwrapWETHCommand = new UnwrapWETH(looksRareV2Value, 1, UnwrapWETHData)
+      const UnwrapWETHCommand = new UnwrapWETH(looksRareV2Value, 919, UnwrapWETHData)
 
       const methodParameters = SwapRouter.swapCallParameters([UnwrapWETHCommand, looksRareV2Trade], {
         sender: FORGE_ROUTER_ADDRESS,
@@ -86,7 +86,7 @@ describe('SwapRouter.swapCallParameters', () => {
     })
 
     it('weth -> 1 looksrare nft without Permit', async () => {
-      const UnwrapWETHCommand = new UnwrapWETH(looksRareV2Value, 1)
+      const UnwrapWETHCommand = new UnwrapWETH(looksRareV2Value, 919)
 
       const methodParameters = SwapRouter.swapCallParameters([UnwrapWETHCommand, looksRareV2Trade], {
         sender: FORGE_SENDER_ADDRESS,

@@ -19,7 +19,7 @@ describe('Permit2', () => {
     it('does not sanitize a normal permit', async () => {
       const inputUSDC = utils.parseUnits('1000', 6).toString()
       const permit = makePermit(USDC.address, inputUSDC)
-      const signature = await generatePermitSignature(permit, wallet, 1)
+      const signature = await generatePermitSignature(permit, wallet, 919)
       const sanitized = getSanitizedSignature(permit, signature)
       expect(sanitized).to.equal(signature)
     })
@@ -27,7 +27,7 @@ describe('Permit2', () => {
     it('does not sanitize a triple length permit', async () => {
       const inputUSDC = utils.parseUnits('1000', 6).toString()
       const permit = makePermit(USDC.address, inputUSDC)
-      const signature = await generatePermitSignature(permit, wallet, 1)
+      const signature = await generatePermitSignature(permit, wallet, 919)
       const multisigSignature = signature + signature.slice(2) + signature.slice(2)
       const sanitized = getSanitizedSignature(permit, multisigSignature)
       expect(sanitized).to.equal(multisigSignature)
@@ -44,7 +44,7 @@ describe('Permit2', () => {
     it('sanitizes a malformed permit', async () => {
       const inputUSDC = utils.parseUnits('1000', 6).toString()
       const permit = makePermit(USDC.address, inputUSDC)
-      const originalSignature = await generatePermitSignature(permit, wallet, 1)
+      const originalSignature = await generatePermitSignature(permit, wallet, 919)
 
       const { recoveryParam } = utils.splitSignature(originalSignature)
       // slice off current v
