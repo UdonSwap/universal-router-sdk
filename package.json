@@ -17,7 +17,7 @@
     "test:all": "yarn test:hardhat && yarn test:forge",
     "test:hardhat": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' hardhat test",
     "test:forge": "forge test",
-    "install:ur": "cd node_modules/udonswap-universal-router && forge install",
+    "install:ur": "cd node_modules/@uniswap/universal-router && forge install",
     "build": "tsdx build",
     "test": "tsdx test",
     "prettier:fix": "prettier --write '**/*.ts' && prettier --write '**/*.json'",
