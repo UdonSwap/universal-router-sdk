@@ -8177,10 +8177,10 @@ typescript@^4.3.3:
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz"
   integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
 
-udonswap-core@1.2.0, udonswap-core@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/udonswap-core/-/udonswap-core-1.2.0.tgz#6bc58594850f699f6f8c8532288907802d699507"
-  integrity sha512-0U++NirkCw8+HniRLNr7AzHM6twDD5HgsNQCaCq5hhzFwvNrwDQnPaDdJfcVJ5M+vPH+4paXJA9cXj8YSqGU8Q==
+udonswap-core@1.2.3, udonswap-core@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/udonswap-core/-/udonswap-core-1.2.3.tgz#c1ee2dbc98a62009b8dbf0966d0e1190b483f549"
+  integrity sha512-ItF6toBcyyfHrvjEs7hPR4fWIjnqdihNLbtsrjdyvH1azS6YqXSRnXZ6X/L3dF7B+EJRvm35bXE3RVhmdQp3Mw==
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"
@@ -8189,20 +8189,20 @@ udonswap-core@1.2.0, udonswap-core@^1.2.0:
     tiny-invariant "^1.1.0"
     toformat "^2.0.0"
 
-udonswap-router@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/udonswap-router/-/udonswap-router-1.2.0.tgz#d434b76e2aa86c708c8802baee084a6233c66b53"
-  integrity sha512-EcHDZZvqV7GVEVEpUAuVFhcrIYlOYqO2OY16TMtEONPgd0EHCza0hLOUt4IXTnAIMv3cSSgfspEj4EmzV1Krqg==
+udonswap-router@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/udonswap-router/-/udonswap-router-1.2.1.tgz#6fe1b6cadc3259466bd33dc311e78f2e73eb019d"
+  integrity sha512-CzPJbTVu4rt7pPcfpmKhedo5QI5lMjVC04PPmXO+Ri4/zZJi8cawjS8wGcIehM+eA0MqJCAfd+6DF6MaVWjoEA==
   dependencies:
     "@ethersproject/abi" "^5.5.0"
     "@uniswap/swap-router-contracts" "^1.1.0"
-    udonswap-core "^1.2.0"
-    udonswap-v3 "^1.2.0"
+    udonswap-core "1.2.3"
+    udonswap-v3 "1.2.1"
 
-udonswap-v3@1.2.0, udonswap-v3@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/udonswap-v3/-/udonswap-v3-1.2.0.tgz#30df061a59f4c92cf85bf76e2ab06f5edf3d0a47"
-  integrity sha512-d0aQUcC97FR3MMCgNiuRmAEJbc+s1i8aVcS0Aq9WckkbcOaLjWPS4P1w9pQvRGpHhuvo+WTIupWmLoeaX1Hk+Q==
+udonswap-v3@1.2.1, udonswap-v3@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/udonswap-v3/-/udonswap-v3-1.2.1.tgz#529c17952cfb7bcad989ce7562361119c1210ed0"
+  integrity sha512-Ws3U+RZvNFNeMRiSCBFXWS4CO54oPWb0RxxZBBhTXky5wEGCOyNFoxFF5WCqLVyrWXs+ckDy+u2jTh533isCiA==
   dependencies:
     "@ethersproject/abi" "^5.0.12"
     "@ethersproject/solidity" "^5.0.9"
@@ -8211,7 +8211,7 @@ udonswap-v3@1.2.0, udonswap-v3@^1.2.0:
     "@uniswap/v3-staker" "1.0.0"
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
-    udonswap-core "1.2.0"
+    udonswap-core "^1.2.3"
 
 uglify-js@^3.1.4:
   version "3.17.4"

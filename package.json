@@ -1,7 +1,7 @@
 {
   "name": "udonswap-sdk-universal-router",
   "version": "1.2.0",
-  "description": "sdk for integrating with the Universal Router contracts",
+  "description": "SDK for integrating with the Universal Router contracts",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -49,13 +49,13 @@
     "typescript": "^4.3.3"
   },
   "dependencies": {
-    "@uniswap/universal-router": "1.6.0",
     "@uniswap/permit2-sdk": "^1.2.0",
+    "@uniswap/universal-router": "1.6.0",
     "bignumber.js": "^9.0.2",
-    "udonswap-v3":"1.2.0",
-    "udonswap-core":"1.2.0",
-    "udonswap-router":"1.2.0",
-    "ethers": "^5.3.1"
+    "ethers": "^5.3.1",
+    "udonswap-core": "1.2.3",
+    "udonswap-router": "1.2.1",
+    "udonswap-v3": "1.2.1"
   },
   "repository": {
     "type": "git",
