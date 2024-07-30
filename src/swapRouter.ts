@@ -6,12 +6,13 @@ import { MethodParameters } from 'lampros-v3'
 import { Trade as RouterTrade } from 'lampros-router'
 import { Currency, TradeType } from 'lampros-core'
 import { Command, RouterTradeType } from './entities/Command'
-import { NFTTrade, SupportedProtocolsData } from './entities/NFTTrade'
+import { Market, NFTTrade, SupportedProtocolsData } from './entities/NFTTrade'
 import { UniswapTrade, SwapOptions } from './entities/protocols/uniswap'
 import { UnwrapWETH } from './entities/protocols/unwrapWETH'
 import { CommandType, RoutePlanner } from './utils/routerCommands'
 import { encodePermit } from './utils/inputTokens'
 import { ROUTER_AS_RECIPIENT, SENDER_AS_RECIPIENT, ETH_ADDRESS } from './utils/constants'
+import { SeaportTrade } from './entities'
 
 export type SwapRouterConfig = {
   sender?: string // address
@@ -45,6 +46,16 @@ export abstract class SwapRouter {
         const nftTrade = trade as SupportedNFTTrade
         nftTrade.encode(planner, { allowRevert })
         const tradePrice = nftTrade.getTotalPrice()
+
+        if (nftTrade.market == Market.Seaport) {
+          const seaportTrade = nftTrade as SeaportTrade
+          const seaportInputTokens = seaportTrade.getInputTokens()
+          seaportInputTokens.forEach((inputToken) => {
+            nftInputTokens.add(inputToken)
+          })
+        } else {
+          nftInputTokens.add(ETH_ADDRESS)
+        }
 
         // send enough native value to contract for NFT purchase
         if (currentNativeValueInRouter.lt(tradePrice)) {

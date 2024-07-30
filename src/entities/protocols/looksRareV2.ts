@@ -74,7 +74,17 @@ export class LooksRareV2Trade extends NFTTrade<LooksRareV2Data> {
         merkleTrees[0],
         ZERO_ADDRESS, // affiliate
       ])
+    } else {
+      calldata = LooksRareV2Trade.INTERFACE.encodeFunctionData('executeMultipleTakerBids', [
+        takerBids,
+        makerOrders,
+        makerSignatures,
+        merkleTrees,
+        ZERO_ADDRESS, // affiliate
+        false, // isAtomic (we deal with this in allowRevert)
+      ])
     }
+
     planner.addCommand(CommandType.LOOKS_RARE_V2, [totalValue, calldata], config.allowRevert)
   }
 
