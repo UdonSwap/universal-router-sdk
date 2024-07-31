@@ -5859,10 +5859,10 @@ kleur@^3.0.3:
   resolved "https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-lampros-core@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/lampros-core/-/lampros-core-1.3.0.tgz#97eec5f55fcc8b872966795519185f0503e94b6d"
-  integrity sha512-xj760HS9M+U3huVeFgI5SGGvkLXy9QFIWdOPRsRTN0EkpETUafCaJ2u9CXz8Nncy04E3qaXavWTeM6TnK/zSKw==
+lampros-core@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lampros-core/-/lampros-core-1.4.0.tgz#a5e1d47f493e5ae6bcb6f7dabea3a928fc6f1ebe"
+  integrity sha512-cAFoIc4KgK1cbjrFF7ae8zK2T0HwjmLRhCVnOHF5Vd/tjUjNZuWDOKeH/EEzJto1Vd/nGNRQZhuwhOk31qLfmA==
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"
@@ -5871,27 +5871,27 @@ lampros-core@1.3.0:
     tiny-invariant "^1.1.0"
     toformat "^2.0.0"
 
-lampros-router@1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/lampros-router/-/lampros-router-1.3.3.tgz#b93b1656db2688b109eedae94d657fec3a84a092"
-  integrity sha512-VQ9YrXuiMqCXdeKvqoBD66ztEhxEFmhGaBHkoNBrowA6w5wPJpqbZYTr157/m+018wuYhKstsjtuEF9vX1BblA==
+lampros-router@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lampros-router/-/lampros-router-1.4.0.tgz#da079b20cd4b09498c13fbee29e57bc4c68193db"
+  integrity sha512-Kh2dZ4PsAvlRzSf2NCU8jGbU7cfSOEYsDx8zT79TrE0vyaih8N7pXoHt1N7XfASeXgblasoUNgiFoAeI34FkSw==
   dependencies:
     "@ethersproject/abi" "^5.5.0"
     "@uniswap/swap-router-contracts" "^1.1.0"
-    lampros-core "1.3.0"
-    lampros-v3 "1.3.0"
+    lampros-core "1.4.0"
+    lampros-v3 "1.4.0"
 
-lampros-v3@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/lampros-v3/-/lampros-v3-1.3.0.tgz#8d9ace3085ac14710ba436beef640f6772ae9506"
-  integrity sha512-sWVk06INph3Xv30S7/HcpzskdnQBTaFgeWX0dBWoOjfO++GyXJP0ERRuroeHj95PL14GXZto9ix9nw8U5YHOwg==
+lampros-v3@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lampros-v3/-/lampros-v3-1.4.0.tgz#fea86700843eaa36313601497627c2e9d56a9f19"
+  integrity sha512-QF7Sg7sgNO5l7IOg9PBcGGhNvTS3/Nq8X5g3kwd0PeFHKHuK79nre6FowYyUn3kXwNoa6I+wfOQEGS40higCqA==
   dependencies:
     "@ethersproject/abi" "^5.0.12"
     "@ethersproject/solidity" "^5.0.9"
     "@uniswap/swap-router-contracts" "^1.2.1"
     "@uniswap/v3-periphery" "^1.1.1"
     "@uniswap/v3-staker" "1.0.0"
-    lampros-core "1.3.0"
+    lampros-core "1.4.0"
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 
