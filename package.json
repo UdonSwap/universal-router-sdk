@@ -1,6 +1,6 @@
 {
   "name": "lampros-universal",
-  "version": "1.4.0-beta",
+  "version": "1.4.0-beta.1",
   "description": "sdk for integrating with the Universal Router contracts",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
