@@ -1,12 +1,6 @@
 import { RoutePlanner, CommandType } from '../../utils/routerCommands'
 import { Trade as V3Trade, Pool, encodeRouteToPath } from 'lampros-v3'
-import {
-  Trade as RouterTrade,
-  Protocol,
-  IRoute, 
-  RouteV3,
-  SwapOptions as RouterSwapOptions,
-} from 'lampros-router'
+import { Trade as RouterTrade, Protocol, IRoute, RouteV3, SwapOptions as RouterSwapOptions } from 'lampros-router'
 import { Permit2Permit } from '../../utils/inputTokens'
 import { Currency, TradeType, CurrencyAmount, Percent } from 'lampros-core'
 import { Command, RouterTradeType, TradeConfig } from '../Command'
