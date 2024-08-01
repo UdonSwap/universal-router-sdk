@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import { BigNumber, utils, Wallet } from 'ethers'
-import { PermitSingle } from 'udonswap-permit2'
+import { PermitSingle } from '@uniswap/permit2-sdk'
 import { defaultAbiCoder } from 'ethers/lib/utils'
 import { encodePermit } from '../../src/utils/inputTokens'
 import { RoutePlanner } from '../../src/utils/routerCommands'
