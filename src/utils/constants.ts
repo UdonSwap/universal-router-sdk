@@ -9,10 +9,10 @@ type ChainConfig = {
 const WETH_NOT_SUPPORTED_ON_CHAIN = '0x0000000000000000000000000000000000000000'
 
 const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
-  [919]:{
-    router:'0x759f7Afcc631165D0Cf25195F7eaeCC696AD5c2D',
-    weth:'0x4200000000000000000000000000000000000006',
-    creationBlock:18218448,
+  [919]: {
+    router: '0x759f7Afcc631165D0Cf25195F7eaeCC696AD5c2D',
+    weth: '0x4200000000000000000000000000000000000006',
+    creationBlock: 18218448,
   },
 }
 
@@ -34,10 +34,11 @@ export const WETH_ADDRESS = (chainId: number): string => {
   return CHAIN_CONFIGS[chainId].weth
 }
 
-export const PERMIT2_ADDRESS = '0x000000000022D473030F116dDEE9F6B43aC78BA3'
+export const PERMIT2_ADDRESS = '0x4cbF4db701355B46D2C39Fee93c8aa5F160f7196'
 
 export const CONTRACT_BALANCE = BigNumber.from(2).pow(255)
 export const ETH_ADDRESS = '0x0000000000000000000000000000000000000000'
+export const E_ETH_ADDRESS = '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 export const MAX_UINT256 = BigNumber.from(2).pow(256).sub(1)
 export const MAX_UINT160 = BigNumber.from(2).pow(160).sub(1)
