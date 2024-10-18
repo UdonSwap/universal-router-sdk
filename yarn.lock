@@ -8210,10 +8210,10 @@ typescript@^4.3.3:
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz"
   integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
 
-udonswap-permit2@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/udonswap-permit2/-/udonswap-permit2-1.2.1.tgz#b6408fd6a2531904a1be2091ff171d9167bbfae1"
-  integrity sha512-8Twl1lRQcrlCxsZUlg82CW15SpHs+/gcVVT8VNggiOVDMGCKPfrXOqTll2GOAMg/xDVQDnzDnHf3U0TDXCzLUA==
+udonswap-permit2@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/udonswap-permit2/-/udonswap-permit2-1.2.2.tgz#c27e360e4e1ee800d99aa2464b101b2cb8c71065"
+  integrity sha512-0rdirbf9TIYSdT7HafpwonOQhd+vx2IOu4auLeuDc/SaR5jCJ/Sxhwmi3NE0SxeN4CthWSSCk6dbAZY6FcNH6w==
   dependencies:
     ethers "^5.3.1"
     tiny-invariant "^1.3.1"
