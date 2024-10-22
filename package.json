@@ -1,6 +1,6 @@
 {
   "name": "lampros-universal",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "sdk for integrating with the Universal Router contracts",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -52,9 +52,9 @@
     "@uniswap/universal-router": "1.6.0",
     "bignumber.js": "^9.0.2",
     "ethers": "^5.3.1",
-    "lampros-core": "1.4.1",
-    "lampros-router": "1.4.1",
-    "lampros-v3": "1.4.1",
+    "lampros-core": "1.4.2",
+    "lampros-router": "1.4.2",
+    "lampros-v3": "1.4.2",
     "udonswap-permit2": "^1.2.2"
   },
   "repository": {
