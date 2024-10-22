@@ -2184,14 +2184,6 @@
   resolved "https://registry.npmjs.org/@uniswap/lib/-/lib-4.0.1-alpha.tgz"
   integrity sha512-f6UIliwBbRsgVLxIaBANF6w09tYqc6Y/qXdsrbEmXHyFA7ILiKrIwRFXe1yOg8M3cksgVsO9N7yuL2DdCGQKBA==
 
-"@uniswap/permit2-sdk@^1.2.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@uniswap/permit2-sdk/-/permit2-sdk-1.3.0.tgz#b54124e570f0adbaca9d39b2de3054fd7d3798a1"
-  integrity sha512-LstYQWP47dwpQrgqBJ+ysFstne9LgI5FGiKHc2ewjj91MTY8Mq1reocu6U/VDncdR5ef30TUOcZ7gPExRY8r6Q==
-  dependencies:
-    ethers "^5.7.0"
-    tiny-invariant "^1.1.0"
-
 "@uniswap/swap-router-contracts@^1.1.0":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@uniswap/swap-router-contracts/-/swap-router-contracts-1.3.1.tgz#0ebbb93eb578625618ed9489872de381f9c66fb4"
@@ -4001,7 +3993,7 @@ ethereumjs-util@^6.0.0, ethereumjs-util@^6.2.1:
     ethjs-util "0.1.6"
     rlp "^2.2.3"
 
-ethers@^5.3.1, ethers@^5.7.0:
+ethers@^5.3.1:
   version "5.7.2"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-5.7.2.tgz#3a7deeabbb8c030d4126b24f84e525466145872e"
   integrity sha512-wswUsmWo1aOK8rR7DIKiWSw9DbLWe6x98Jrn8wcTflTVvaXhAMaB5zGAXy0GYQEQp9iO1iSHWVyARQm11zUtyg==
@@ -5859,10 +5851,10 @@ kleur@^3.0.3:
   resolved "https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-lampros-core@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/lampros-core/-/lampros-core-1.4.0.tgz#a5e1d47f493e5ae6bcb6f7dabea3a928fc6f1ebe"
-  integrity sha512-cAFoIc4KgK1cbjrFF7ae8zK2T0HwjmLRhCVnOHF5Vd/tjUjNZuWDOKeH/EEzJto1Vd/nGNRQZhuwhOk31qLfmA==
+lampros-core@1.4.1, lampros-core@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/lampros-core/-/lampros-core-1.4.1.tgz#559414de105aa5027fe48e30246c7be38837dab2"
+  integrity sha512-r2aOf1TeS91HjcE+nKCLqcFiVPKv6u6fJ3VnlT2fPc6qANoqX43JX17RBigNra7dGnbGXZbDEKS4BLnMd6yoxg==
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"
@@ -5871,27 +5863,27 @@ lampros-core@1.4.0:
     tiny-invariant "^1.1.0"
     toformat "^2.0.0"
 
-lampros-router@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/lampros-router/-/lampros-router-1.4.0.tgz#da079b20cd4b09498c13fbee29e57bc4c68193db"
-  integrity sha512-Kh2dZ4PsAvlRzSf2NCU8jGbU7cfSOEYsDx8zT79TrE0vyaih8N7pXoHt1N7XfASeXgblasoUNgiFoAeI34FkSw==
+lampros-router@1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/lampros-router/-/lampros-router-1.4.1.tgz#a0e723a17f35a0164e2f4868f132b48c3f126f13"
+  integrity sha512-ZR3Gy4ZLfmoJYiajUk4hixoCpqfwwsn6vmyBciCPRyii1nAIMaUSeIZguf9zn2+818+hKe1RCFiJNJfy5dibdA==
   dependencies:
     "@ethersproject/abi" "^5.5.0"
     "@uniswap/swap-router-contracts" "^1.1.0"
-    lampros-core "1.4.0"
-    lampros-v3 "1.4.0"
+    lampros-core "^1.4.1"
+    lampros-v3 "^1.4.1"
 
-lampros-v3@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/lampros-v3/-/lampros-v3-1.4.0.tgz#fea86700843eaa36313601497627c2e9d56a9f19"
-  integrity sha512-QF7Sg7sgNO5l7IOg9PBcGGhNvTS3/Nq8X5g3kwd0PeFHKHuK79nre6FowYyUn3kXwNoa6I+wfOQEGS40higCqA==
+lampros-v3@1.4.1, lampros-v3@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/lampros-v3/-/lampros-v3-1.4.1.tgz#02a9aa915a3aa5b8b6827c54164f12a8b1247830"
+  integrity sha512-o9Mw57qmTrji7aB2T750ReJszfenPrFrD08tKUMbqk0/uWcYm79A/FM4H34oJsxvy0ZW4Q/z5rIx06Z4omqfKw==
   dependencies:
     "@ethersproject/abi" "^5.0.12"
     "@ethersproject/solidity" "^5.0.9"
     "@uniswap/swap-router-contracts" "^1.2.1"
     "@uniswap/v3-periphery" "^1.1.1"
     "@uniswap/v3-staker" "1.0.0"
-    lampros-core "1.4.0"
+    lampros-core "^1.4.1"
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 
@@ -7901,6 +7893,11 @@ tiny-invariant@^1.1.0:
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.3.1.tgz#8560808c916ef02ecfd55e66090df23a4b7aa642"
   integrity sha512-AD5ih2NlSssTCwsMznbvwMZpJ1cbhkGd2uueNxzv2jDlEeZdU04JQfRnggJQ8DrcVBGjAsCKwFBbDlVNtEMlzw==
 
+tiny-invariant@^1.3.1:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.3.3.tgz#46680b7a873a0d5d10005995eb90a70d74d60127"
+  integrity sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==
+
 tiny-warning@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/tiny-warning/-/tiny-warning-1.0.3.tgz"
@@ -8212,6 +8209,14 @@ typescript@^4.3.3:
   version "4.8.4"
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz"
   integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
+
+udonswap-permit2@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/udonswap-permit2/-/udonswap-permit2-1.2.2.tgz#c27e360e4e1ee800d99aa2464b101b2cb8c71065"
+  integrity sha512-0rdirbf9TIYSdT7HafpwonOQhd+vx2IOu4auLeuDc/SaR5jCJ/Sxhwmi3NE0SxeN4CthWSSCk6dbAZY6FcNH6w==
+  dependencies:
+    ethers "^5.3.1"
+    tiny-invariant "^1.3.1"
 
 uglify-js@^3.1.4:
   version "3.17.4"
